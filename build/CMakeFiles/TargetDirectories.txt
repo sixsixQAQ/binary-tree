@@ -1,3 +1,0 @@
-/home/sixqaq/binary-tree/build/CMakeFiles/main.dir
-/home/sixqaq/binary-tree/build/CMakeFiles/edit_cache.dir
-/home/sixqaq/binary-tree/build/CMakeFiles/rebuild_cache.dir
