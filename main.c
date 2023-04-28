@@ -6,16 +6,16 @@
 void
 print_all (binary_tree_node *tree)
 {
-	printf ("preorder traverse: "), binary_tree_print_data (tree, DLR), putchar ('\n');
-	printf ("inorder traverse: "), binary_tree_print_data (tree, LDR), putchar ('\n');
-	printf ("postorder traverse: "), binary_tree_print_data (tree, LRD), putchar ('\n');
-	printf ("level-order traverse: "), binary_tree_print_data (tree, LEVEL), putchar ('\n');
+	printf ("preorder traverse: \t"), binary_tree_print_data (tree, DLR), putchar ('\n');
+	printf ("inorder traverse: \t"), binary_tree_print_data (tree, LDR), putchar ('\n');
+	printf ("postorder traverse: \t"), binary_tree_print_data (tree, LRD), putchar ('\n');
+	printf ("level-order traverse: \t"), binary_tree_print_data (tree, LEVEL), putchar ('\n');
 	
-	printf ("print tree： "), binary_tree_print_tree (tree), putchar ('\n');
+	printf ("print tree： \t\t"), binary_tree_print_tree (tree), putchar ('\n');
 	
-	printf ("node count：%d\n", binary_tree_get_node_count (tree));
-	printf ("leaf node count：%d\n", binary_tree_get_leaf_node_count (tree));
-	printf ("tree depth：%d\n", binary_tree_get_tree_depth (tree));
+	printf ("node count：\t\t%d\n", binary_tree_get_node_count (tree));
+	printf ("leaf node count：\t%d\n", binary_tree_get_leaf_node_count (tree));
+	printf ("tree depth：\t\t%d\n", binary_tree_get_tree_depth (tree));
 }
 
 int
