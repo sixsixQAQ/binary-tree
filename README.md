@@ -1,3 +1,3 @@
 ## STNOPSIS
 
-二叉树demo，C语言实现。
+Binary tree demo，implemented in C language.

@@ -6,16 +6,16 @@
 void
 print_all (binary_tree_node *tree)
 {
-	printf ("先序遍历: "), binary_tree_print_data (tree, DLR), putchar ('\n');
-	printf ("中序遍历: "), binary_tree_print_data (tree, LDR), putchar ('\n');
-	printf ("后序遍历: "), binary_tree_print_data (tree, LRD), putchar ('\n');
-	printf ("层序遍历: "), binary_tree_print_data (tree, LEVEL), putchar ('\n');
+	printf ("preorder traverse: "), binary_tree_print_data (tree, DLR), putchar ('\n');
+	printf ("inorder traverse: "), binary_tree_print_data (tree, LDR), putchar ('\n');
+	printf ("postorder traverse: "), binary_tree_print_data (tree, LRD), putchar ('\n');
+	printf ("level-order traverse: "), binary_tree_print_data (tree, LEVEL), putchar ('\n');
 	
-	printf ("打印树： "), binary_tree_print_tree (tree), putchar ('\n');
+	printf ("print tree： "), binary_tree_print_tree (tree), putchar ('\n');
 	
-	printf ("结点数：%d\n", binary_tree_get_node_count (tree));
-	printf ("叶子结点数：%d\n", binary_tree_get_leaf_node_count (tree));
-	printf ("树深：%d\n", binary_tree_get_tree_depth (tree));
+	printf ("node count：%d\n", binary_tree_get_node_count (tree));
+	printf ("leaf node count：%d\n", binary_tree_get_leaf_node_count (tree));
+	printf ("tree depth：%d\n", binary_tree_get_tree_depth (tree));
 }
 
 int
@@ -45,7 +45,7 @@ main (void)
 	}
 	
 	{
-		puts ("--------------重建树--------------：");
+		puts ("--------------rebuilt tree--------------：");
 		char *DLR_sequence = "ABCDEFGHI";
 		char *LDR_sequence = "DECBFAHGI";
 		
@@ -78,7 +78,7 @@ main (void)
 		binary_tree_delete (tree);
 	}
 	{
-		puts ("--------------重建树--------------：");
+		puts ("--------------rebuild tree--------------：");
 		char *DLR_sequence = "ABDHECFIJG";
 		char *LDR_sequence = "DHBEAIFJCG";
 		
