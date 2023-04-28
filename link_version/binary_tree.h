@@ -1,3 +1,8 @@
+/**
+ * 二叉树指针版本实现。
+ *
+*/
+
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H
 
